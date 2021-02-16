@@ -31,4 +31,4 @@ jobs:
       with:
         app-name: 'aipfd'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_970a48a004ec422b838de395954b23ff }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_4dd58199160f42ff9c4ac0e17208357d }}
