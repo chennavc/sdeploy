@@ -1,5 +1,7 @@
 from flask import Flask,render_template,request
 from flask.helpers import get_debug_flag
+import os
+
 
 
 # from scipy.io.wavfile import write
@@ -70,7 +72,7 @@ def result():
         # symbol=request.form['symbol']
         
         result=model(array (mel_spec("file.wav")))
-        
+        os.remove("./file.wav")
 
         return render_template ('result.html',result=result)
     else:
